@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "packageManager": "npm@11.6.2",
+  "workspaces": [
+    "packages/*",
+    "app/*",
+    "model/*"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.6",
+    "turbo": "^2.8.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "inversify": "^7.11.0",
+    "ollama": "^0.6.3",
+    "reflect-metadata": "^0.2.2",
+    "ts-node": "^10.9.2"
+  }
+}
