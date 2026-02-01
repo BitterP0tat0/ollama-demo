@@ -13,7 +13,6 @@
     "strict": true,
     "jsx": "react-jsx",
     "verbatimModuleSyntax": false,
-    "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
@@ -21,9 +20,9 @@
     "allowImportingTsExtensions": true,
     "rewriteRelativeImportExtensions":true,
     "paths": {
-      "@packages/shared": ["../../packages/shared/src/index.ts"],
+      "@packages/shared": ["../../packages/shared/src"],
     }
 
-  },
-    "references": [{"path": "../../packages/shared/tsconfig.json"  }]
+  },  
+    "references": [{"path": "../../packages/shared/tsconfig.json"}],
 }
