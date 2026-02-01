@@ -2,7 +2,6 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    "rootDir": "src",
     "outDir": "dist",
 
     // Environment Settings
@@ -40,13 +39,14 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-    
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions":true,
+    "composite": true
+  
   },
-  "devDependencies": {
-    "turbo": "^2.8.1",
-    "typescript": "^5.9.3"
-  },
-  "dependencies": {
-    "ts-node": "^10.9.2"
-  }
+  "include": ["src"]
+
+  
 }
