@@ -1,4 +1,0 @@
-
-> @packages/shared@1.0.0 build
-> tsc -b tsconfig.json
-
