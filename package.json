@@ -11,7 +11,7 @@
   "packageManager": "npm@11.6.2",
   "workspaces": [
     "packages/shared",
-    "app/*"
+    "apps/app"
   ],
   "keywords": [],
   "author": "",

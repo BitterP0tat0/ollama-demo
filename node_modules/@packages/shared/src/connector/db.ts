@@ -1,4 +1,4 @@
-import { drizzle } from 'drizzle-orm/node-postgres';
+import { drizzle } from 'drizzle-orm/postgres-js'
 import { injectable } from "inversify";
 import postgres from 'postgres';
 import "reflect-metadata";
@@ -11,7 +11,8 @@ export class DrizzleConnector {
 
     async Connect() {
         try {
-            const db = drizzle(this.dbUrl);
+            const client = postgres(this.dbUrl)
+            const db = drizzle({client});
             console.log("Connected to database");
             return db;
         } catch (error) {
