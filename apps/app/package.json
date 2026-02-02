@@ -4,6 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
+  "fetch": "npx drizzle-kit pull --config src/drizzleConfig.ts",
   "dev": "node --loader ts-node/esm src/application/main.ts",
   "build": "npx drizzle-kit pull --config src/drizzleConfig.ts && tsc -p tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
