@@ -7,17 +7,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { drizzle } from "drizzle-orm/singlestore";
+import { drizzle } from 'drizzle-orm/node-postgres';
 import { injectable } from "inversify";
-import postgres from 'postgres';
+import "reflect-metadata";
 let DrizzleConnector = class DrizzleConnector {
     dbUrl;
-    client;
-    db;
     constructor(dbUrl) {
         this.dbUrl = dbUrl;
-        this.client = postgres(this.dbUrl);
-        this.db = drizzle(this.client);
+        this.dbUrl = dbUrl;
+    }
+    async Connect() {
+        try {
+            const db = drizzle(this.dbUrl);
+            console.log("Connected to database");
+            return db;
+        }
+        catch (error) {
+            throw new Error("Error connecting to database");
+        }
     }
 };
 DrizzleConnector = __decorate([
