@@ -1,18 +1,20 @@
 //models
-export * from './models/User.ts'
-export * from './models/Chat.ts'
+export * from "./models/User.ts";
+export * from "./models/Chat.ts";
 
 //Dto
-export * from './dto/login.ts'
-export * from './dto/register.ts'
+export * from "./dto/login.ts";
+export * from "./dto/register.ts";
 
-//DataBase
-export * from './connector/db.ts'
-
-//jwt 
-export * from './auth/jwt.create.ts'
-export * from './auth/jwt.passport.ts'
+//Bcrypt
+export * from "./auth/bcrypt.ts";
+//jwt
+export * from "./auth/jwt.create.ts";
 
 //types and payloads
-export * from './payload/jwtPayload.ts'
-export * from './types/roles.ts'
+export * from "./payload/jwtPayload.ts";
+export * from "./types/roles.ts";
+export * from "./types/exception.ts";
+//Exceptions
+export * from "./exceptions/UnauthorizedException.ts";
+export * from "./exceptions/ConflictException.ts";
