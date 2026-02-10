@@ -9,7 +9,7 @@ import {
 import { RegisterDto } from "@packages/shared";
 import express from "express";
 import { inject } from "inversify";
-import { UserService } from "../../service/userService.ts";
+import { UserService } from "../../service/user/userService.ts";
 import { GlobalErrorHandler } from "../../middleware/errorhandler.ts";
 
 @Controller("")

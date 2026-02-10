@@ -15,7 +15,7 @@ import { eq } from "drizzle-orm";
 import { Bcrypt } from "@packages/shared";
 import { UnauthorizedException } from "@packages/shared";
 import { config } from "dotenv";
-import { UserService } from "../../service/userService.ts";
+import { UserService } from "../../service/user/userService.ts";
 import { GlobalErrorHandler } from "../../middleware/errorhandler.ts";
 config();
 @Controller("")

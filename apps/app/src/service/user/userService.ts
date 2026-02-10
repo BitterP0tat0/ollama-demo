@@ -1,12 +1,12 @@
 import { inject, injectable } from "inversify";
-import { Drizzle } from "../core/db/db.ts";
+import { Drizzle } from "../../core/db/db.ts";
 import {
   Bcrypt,
   ConflictException,
   LoginDto,
   RegisterDto,
 } from "@packages/shared";
-import { user } from "../supabase/migrations/schema.ts";
+import { user } from "../../supabase/migrations/schema.ts";
 import { eq, or } from "drizzle-orm";
 @injectable()
 export class UserService {

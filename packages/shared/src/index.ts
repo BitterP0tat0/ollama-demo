@@ -1,7 +1,7 @@
 //models
 export * from "./models/User.ts";
 export * from "./models/Chat.ts";
-
+export * from "./models/Mcp.ts";
 //Dto
 export * from "./dto/login.ts";
 export * from "./dto/register.ts";
