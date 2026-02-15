@@ -22,7 +22,6 @@ export class OllamaController {
   ) {
     try {
       const response = await this.mcpService.getMcpResponse(prompt);
-      console.log("MCP response:", response.message.content);
       res.status(200).json(response.message.content);
     } catch (error) {
       throw error;

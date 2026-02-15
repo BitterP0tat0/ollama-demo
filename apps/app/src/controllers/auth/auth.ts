@@ -58,7 +58,7 @@ export class AuthController {
       };
 
       const token = this.jwtMethod.signJwt(payload);
-      res.json({
+      res.status(200).json({
         message: "Login sucessfully",
         token,
       });
